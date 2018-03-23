@@ -14,10 +14,45 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
+		@media screen and (max-width: 1280px){
 			.feature {
-				position: relative;
-				height: 35em;
+				height: 30em;
 			}
+		}
+
+		@media screen and (max-width: 736px){
+			.feature {
+				background: #ffffff;
+				display: block;
+				height: auto;
+				margin-bottom: 2em;
+			}
+
+				.feature:last-child {
+					margin-bottom: 0;
+				}
+
+				.feature:before, .feature:after {
+					display: none;
+				}
+
+				.feature .image {
+					float: none;
+					height: 15em;
+					width: 100%;
+				}
+
+				.feature .content {
+					border: solid 1px rgba(224, 224, 224, 0.75);
+					padding: 2em !important;
+					text-align: center;
+					width: 100%;
+				}
+
+		}
+
+					
+			
 		</style>
 	</head>
 	<body>
@@ -67,15 +102,19 @@
 						<a href="#" class="image icon fa-"><img src="images/pic02.jpg" alt="" /></a>
 						<div class="content">
 							<h3>Irradiance</h3>
-							<p>Round 1 -28/03/18<br />Tired of fast and complex technologies?
+							<p>Tired of fast and complex technologies?
 								Don't worry, we have got you covered!
 								Come, test your basics and show off your
 								knowledge in the world of electronics. Followed by an Arduino workshop and an unique journey of
 								unleashing the imagination to reality.Set in
 								space.
 								Your tools? Arduino, Sensors and LEDs.</p>
-								
-							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQDg4z9lApi2CrnvsnZjf_1oYCf5H7WUfYpTCRpYdobGrq0A/viewform?usp=sf_link">Register</iframe>
+								<ul>
+									<li>Round 1 : 28/03/18</li>
+									<li>Arduino Wrokshop : 29/03/18</li>
+									<li>Round 2 : 30/03/18</li>
+								</ul>
+							<button data-toggle="modal" data-target="#irradiance" class="button" style="background-color: #2d131d">Register</a>
 						</div>
 					</section>
 					<section class="feature left">
@@ -107,7 +146,7 @@
 							<ul>
 								<li>29/03/18</li>
 							</ul>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLScbfl9PDxX4jzb0OV11FX8Q7-HIGr102Ztz6sbv9QcqhEqgjw/viewform?usp=sf_link" target="_blank" class="button" style="background-color: #2d131d">Register</a>
+							<button data-toggle="modal" data-target="#paperpres" class="button" style="background-color: #2d131d">Register</a>
 						</div>
 					</section>
 					<section class="feature left">
@@ -123,8 +162,8 @@ cells on fire!
 								<li>To: 01/04/18 - 11:00 AM</li>
 								<li>Team Size: 2-4</li>
 							</ul>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdzAMXrigwcGcJjBJ_4DBl2qUzORyYKGVe7fxM-50qx92klvQ/viewform?usp=sf_link" target="_blank" class="button" style="background-color: #2d131d">Register</a>
-						</div>
+							<button data-toggle="modal" data-target="#jarvis" class="button" style="background-color: #2d131d">Register</a>
+							</div>
 					</section>
 				</div>
 
@@ -159,12 +198,50 @@ cells on fire!
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
       <div class="modal-body">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdV9NZkm1FoThPx2cozYp-u5grW1_6xhWMJzoahbLZW9wjpag/viewform?usp=sf_link" width="100%" height="300"></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdV9NZkm1FoThPx2cozYp-u5grW1_6xhWMJzoahbLZW9wjpag/viewform?usp=sf_link" width="100%" height="350"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="irradiance" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQDg4z9lApi2CrnvsnZjf_1oYCf5H7WUfYpTCRpYdobGrq0A/viewform?usp=sf_link" height="350" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="paperpres" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbfl9PDxX4jzb0OV11FX8Q7-HIGr102Ztz6sbv9QcqhEqgjw/viewform?usp=sf_link" width="100%" height="350"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="jarvis" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzAMXrigwcGcJjBJ_4DBl2qUzORyYKGVe7fxM-50qx92klvQ/viewform?usp=sf_link" width="100%" height="350"></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
