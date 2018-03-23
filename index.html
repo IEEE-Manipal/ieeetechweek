@@ -8,8 +8,9 @@
 	<head>
 		<title>IEEE | SBM | TechWeek</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
@@ -42,8 +43,7 @@
 					<br />
 					Something better and more catchy :p</h2>
 					<br />
-					<h3>Download the Brochure</h3>
-					<a href="https://drive.google.com/open?id=1TyYJ-yYFYHGAxa7lKKkQIIfauyUdfln0" target="_blank" class="button">View Brochure</a>
+					<a href="https://drive.google.com/open?id=1TyYJ-yYFYHGAxa7lKKkQIIfauyUdfln0" target="_blank" class="button">Checkout the Brochure</a>
 					<!--
 					<p>Tellus erat mauris ipsum fermentum<br />
 					etiam vivamus nunc nibh morbi.</p>
@@ -74,12 +74,8 @@
 								unleashing the imagination to reality.Set in
 								space.
 								Your tools? Arduino, Sensors and LEDs.</p>
-								<ul>
-									<li>Round 1 - 28/03/18</li>
-									<li>Arduino Workshop - 29/03/18</li>
-									<li>Finals - 30/03/18</li>
-								</ul>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdQDg4z9lApi2CrnvsnZjf_1oYCf5H7WUfYpTCRpYdobGrq0A/viewform?usp=sf_link" target="_blank" class="button" style="background-color: #2d131d">Register</a>
+								
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQDg4z9lApi2CrnvsnZjf_1oYCf5H7WUfYpTCRpYdobGrq0A/viewform?usp=sf_link">Register</iframe>
 						</div>
 					</section>
 					<section class="feature left">
@@ -95,7 +91,7 @@
 								<li>Workshop on UI for App/Web - 28/03/18</li>
 								<li>Final Round - 30/03/18</li>
 							</ul>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdV9NZkm1FoThPx2cozYp-u5grW1_6xhWMJzoahbLZW9wjpag/viewform?usp=sf_link" target="_blank" class="button" style="background-color: #2d131d">Register</a>
+							<button data-toggle="modal" data-target="#grand" class="button" style="background-color: #2d131d">Register</a>
 						</div>
 					</section>
 					<section class="feature right">
@@ -158,8 +154,30 @@ cells on fire!
 					
 				</div>
 			</div>
+<div id="grand" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdV9NZkm1FoThPx2cozYp-u5grW1_6xhWMJzoahbLZW9wjpag/viewform?usp=sf_link" width="100%" height="300"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 		<!-- Scripts -->
+		<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
