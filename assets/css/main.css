@@ -2517,6 +2517,12 @@
 		text-align: center;
 	}
 
+	#header img {
+		 width: 20%;
+		 margin-top: -3em;
+		 margin-left: 4rem;
+	}
+
 		#header:before, #header:after {
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
@@ -3040,6 +3046,12 @@
 	@media screen and (max-width: 480px) {
 
 		/* Section/Article */
+
+			#header img {
+				width: 50%;
+				margin-top: 1em;
+				margin-left: 3rem;
+			}
 
 			header.major {
 				padding-left: 1em;
