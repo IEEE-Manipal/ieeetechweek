@@ -77,7 +77,29 @@
 			}
 
 		}		
-			
+		
+		#overlay {
+		    position: fixed;
+		    display: none;
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background-color: rgba(0,0,0,0.5);
+		    z-index: 2;
+		    cursor: pointer;
+		}
+		#text{
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    font-size: 50px;
+		    color: white;
+		    transform: translate(-50%,-50%);
+		    -ms-transform: translate(-50%,-50%);
+		}
 		</style>
 
 <!--Start of Tawk.to Script-->
@@ -95,7 +117,10 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 	</head>
 
-	<body style="height: 100%">
+	<body style="height: 100%" onload="on()">
+		<div id="overlay">
+		  <div id="text">We will be back next year</div>
+		</div>
 
 		<!-- Header -->
 			<div id="header" style="margin-top: -2.2em">
@@ -131,7 +156,7 @@ s0.parentNode.insertBefore(s1,s0);
 									<li><strong>To: 31/03/18 - 11:59 PM</strong></li>
 									<li><strong style="font-weight: 700; color: #E74C3C; font-size: 22px">Cash prizes worth 1,000/- to be won!</strong></li>
 								</ul>	
-							<a href="https://www.hackerrank.com/cosmocode" target="_blank" class="button" style="background-color: #2d131d; text-decoration: none; color: white;">Register</a>
+							<!-- <a href="https://www.hackerrank.com/cosmocode" target="_blank" class="button" style="background-color: #2d131d; text-decoration: none; color: white;">Register</a> -->
 						</div>
 					</section>
 					<section class="feature right">
@@ -151,7 +176,7 @@ s0.parentNode.insertBefore(s1,s0);
 									<li><strong>Round 2 : 30/03/18 | AB5 204</strong></li>
 									<li><strong style="font-weight: 700; color: #E74C3C; font-size: 22px">Cash prizes worth 1500/- to be won!</strong></li>
 								</ul>
-							<a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/irradiance/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a>
+							<!-- <a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/irradiance/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a> -->
 						</div>
 					</section>
 					<section class="feature left">
@@ -168,7 +193,7 @@ s0.parentNode.insertBefore(s1,s0);
 								<li><strong>Final Round - 30/03/18 | AB5 205</strong></li>
 								<li><strong style="font-weight: 700; color: #E74C3C; font-size: 22px">Cash prizes worth 1500/- to be won!</strong></li>
 							</ul>
-							<a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/thegranddesign/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a>
+							<!-- <a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/thegranddesign/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a> -->
 						</div>
 					</section>
 					<section class="feature right">
@@ -186,7 +211,7 @@ s0.parentNode.insertBefore(s1,s0);
 								<li><strong style="font-weight: 700; color: #E74C3C; font-size: 22px">Cash prizes worth 3,000/- to be won!</strong></li>
 
 							</ul>
-							<a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/paperpresentation/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a>
+							<!-- <a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/paperpresentation/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a> -->
 						</div>
 					</section>
 					<section class="feature left">
@@ -201,7 +226,7 @@ s0.parentNode.insertBefore(s1,s0);
 								<li><strong>GSH, Library</strong></li>
 								<li><strong style="font-weight: 700; color: #E74C3C; font-size: 22px">Cash prizes worth 8,000/- to be won!</strong></strong></li>
 							</ul>
-							<a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/projectjarvis/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a>
+							<!-- <a style="color: white; text-decoration: none;" href="https://techweek.ieeemanipal.com/projectjarvis/" target="_blank"><button class="button" style="background-color: #2d131d">Register</button></a> -->
 							</div>
 					</section>
 				</div>
@@ -271,6 +296,11 @@ s0.parentNode.insertBefore(s1,s0);
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			function on() {
+			    document.getElementById("overlay").style.display = "block";
+			}
+			</script>
 
 	</body>
 </html>
