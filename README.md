@@ -1,2 +1,2 @@
 # ieeetechweek
-Tech Week 2019
+This is the repo to host the TechWeek of IEEE
