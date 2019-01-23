@@ -975,6 +975,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 840px) {
 
+		#DO_p{
+			font-size: 0.9em !important;
+			margin-top: -3em !important;
+		}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1219,7 +1223,20 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+		#DO_p{
+			margin-top: -0.8em !important;
+			font-size: 1.3em !important;
+		}
+		.box.style2 .inner:after{
+			display: none !important;
+		}
+		.box.style3:before{
+			display: none !important;
+		}
+		.box.style3:after{
+			display: none !important;
+		}
+		/*To Remove line from sponsors on mobile*/
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1834,7 +1851,7 @@ input, select, textarea {
 			margin-left: -45px;
 			margin-top: -33px;
 			background: url("images/arrow.svg") no-repeat;
-		}
+		} /*theline2*/
 
 		.box :last-child {
 			margin-bottom: 0;
@@ -1912,6 +1929,7 @@ input, select, textarea {
 				padding: 40px 0 0px 0;
 			}
 
+
 				.box.style2 .inner:after {
 					content: '';
 					display: block;
@@ -1920,13 +1938,13 @@ input, select, textarea {
 					left: 50%;
 					height: 100%;
 					border-left: solid 1px #fff;
-				}
+				}	
 
 				.box.style2 .inner .row {
 					position: relative;
 				}
 
-					.box.style2 .inner .row:before {
+/*					.box.style2 .inner .row:before {
 						content: '';
 						display: block;
 						position: absolute;
@@ -1934,7 +1952,7 @@ input, select, textarea {
 						left: 20px;
 						width: calc(100% - 40px);
 						border-bottom: solid 1px #fff;
-					}
+					} Horizontal line*/
 
 				.box.style2 .inner .image {
 					position: relative;
@@ -1946,12 +1964,14 @@ input, select, textarea {
 			background: #fff;
 			padding: 3em;
 		}
-
+		.box.style3:before{
+			display: none !important;
+		}
 			.box.style3 header {
 				text-align: center;
 			}
 
-/* Icons */
+/* Icons 
 
 	.icon {
 		text-decoration: none;
