@@ -1223,6 +1223,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+/*		.hidespons{
+			display: none !important;
+		}*/
 		#DO_p{
 			margin-top: -0.8em !important;
 			font-size: 1.3em !important;
