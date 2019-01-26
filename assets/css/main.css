@@ -1933,7 +1933,7 @@ input, select, textarea {
 			}
 
 
-				.box.style2 .inner:after {
+				/*.box.style2 .inner:after {
 					content: '';
 					display: block;
 					position: absolute;
@@ -1941,7 +1941,7 @@ input, select, textarea {
 					left: 50%;
 					height: 100%;
 					border-left: solid 1px #fff;
-				}	
+				}	*/
 
 				.box.style2 .inner .row {
 					position: relative;
@@ -1968,6 +1968,9 @@ input, select, textarea {
 			padding: 3em;
 		}
 		.box.style3:before{
+			display: none !important;
+		}
+		.box.style3:after{
 			display: none !important;
 		}
 			.box.style3 header {
